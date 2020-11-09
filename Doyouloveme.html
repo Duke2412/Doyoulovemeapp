@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng do you love me</title>
+</head>
+<body align="center">
+<h1>Bạn có yêu tôi không</h1>
+<input type="button" value="Có" onclick="agre()">
+<input type="button" id="No" value="Không" onmouseover="not()" style="position: fixed">
+
+<script>
+    function agre(){
+        alert('Tất nhiên là thế rồi');
+    }
+    function not() {
+        let x = Math.random()* window.innerHeight;
+        let y = Math.random()* window.innerWidth;
+        document.getElementById('No').style.left= y + 'px';
+        document.getElementById('No').style.top=  x + 'px';
+    }
+
+</script>
+</body>
+</html>
